@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1em;
+    font-family: "Figtree", sans-serif;
+    background-color: var(--yellow);
+}
+
+main {
+    width: fit-content;
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: var(--gray-950);
+    font-weight: 800;
+}
+
+div {
+    width: clamp(325px, calc(325px + (383px - 325px)*((100vw - 375px)/(1440px - 375px))) ,383px);
+    height: clamp(498px, calc(498px + (520px - 498px)*((100vw - 375px)/(1440px - 375px))), 520px);
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--white);
+    border-radius: 1.2em;
+    border: solid 1px var(--gray-950);
+    box-shadow: var(--gray-950) 8px 8px 0px;
+
+    padding: clamp(1rem, calc(1rem + (1.25rem - 1rem)*((100vw - 375px)/(1440px - 375px))), 1.25rem);
+}  
+
+img {
+    width: 100%;
+    border-radius: 0.75rem;
+}
+
+#status {
+    display: inline-block;
+    width: fit-content;
+    padding: 0.4em 0.8em;
+    font-weight: 800;
+    border-radius: 0.3em;
+    margin-bottom: -0.75em;
+    font-size: clamp(0.75rem, calc(0.75rem + (0.875rem - 0.75rem)*((100vw - 375px)/(1440px - 375px))), 0.875rem);
+    background-color: var(--yellow);
+}
+#published{
+    color: var(--gray-950);
+    font-weight: 500;
+    font-size: clamp(0.75rem, calc(0.75rem + (0.875rem - 0.75rem)*((100vw - 375px)/(1440px - 375px))), 0.875rem)
+}
+
+h1 {
+    font-weight: 800;
+    font-size: clamp(1.25rem, calc(1.25rem + (1.5rem - 1.25rem)*((100vw - 375px)/(1440px - 375px))), 1.5rem);
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--yellow);
+}
+
+#description {
+    font-weight: 500;
+    color: var(--gray-500);
+    line-height: 1.5em;
+    font-size: clamp(0.875rem, calc(0.875rem + (1rem - 0.875rem)*((100vw - 375px)/(1440px - 375px))), 1rem)
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.875rem, calc(0.875rem + (1rem - 0.875rem)*((100vw - 375px)/(1440px - 375px))), 1rem);
+    gap: 0.75rem;
+
+}
+
+#user-image {
+    width: 32px;
+    height: 32px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
