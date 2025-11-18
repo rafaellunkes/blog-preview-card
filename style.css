@@ -46,7 +46,7 @@ div {
     width: clamp(20.3125rem, calc(20.3125rem + (23.9375rem - 20.3125rem) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), 23.9375rem);
     height: clamp(31.125rem, calc(31.125rem + (32.5rem - 31.125rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 32.5rem);
     box-sizing: border-box;
-    margin: 0.5em;
+    margin: clamp(0.5em, calc(0.5em + (0.7em - 0.5em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))) 0.7em);
 
     display: flex;
     flex-direction: column;
@@ -78,11 +78,11 @@ h1:hover {
 .status {
     display: inline-block;
     width: fit-content;
-    
     padding: 0.4em 0.8em;
+    margin-block-end: clamp(-0.75em, calc(-0.75em + (-0.25em - -0.75em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))) -0.25em);
+
     font-weight: 800;
     border-radius: 0.3em;
-    margin-block-end: -0.75em;
     font-size: clamp(0.75rem, calc(0.75rem + (0.875rem - 0.75rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 0.875rem);
     background-color: var(--yellow);
 }
@@ -108,13 +108,13 @@ h1:hover {
 .user-image {
     width: max(1.5em, 2em);
     height: max(1.5em, 2em);
-    margin-inline-end: 0.75rem;
+    margin-inline-end: clamp(0.75em, calc(0.75em + (1em - 0.75em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))) 1em);
 }
 
 .attribution { 
     font-size: clamp(0.7em, calc(0.7em + (0.7vw - 0.7em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), 0.7vw); 
     text-align: center;
-    margin: 1em;
+    margin: clamp(1em, calc(1em + (1.2em - 1em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))) 1.2em);
 }
 
 .attribution a { 
