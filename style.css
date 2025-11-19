@@ -24,40 +24,39 @@ body {
     flex-direction: column;
     align-items: center;
     
-    font-size: clamp(1em, calc(1em + (1.5vw - 1em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), 1.5vw);
+    font-size: clamp(0.875rem, 1vw, 1.25rem);
 
     font-family: "Figtree", sans-serif;
     background-color: var(--yellow);
 }
 
 main {
-    width: fit-content;
+    width: 100%;
     flex-grow: 1;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     color: var(--gray-950);
     font-weight: 800;
 }
 
-div {
-    width: clamp(20.3125rem, calc(20.3125rem + (23.9375rem - 20.3125rem) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), 23.9375rem);
-    height: clamp(31.125rem, calc(31.125rem + (32.5rem - 31.125rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 32.5rem);
-    box-sizing: border-box;
-    margin: clamp(0.5em, calc(0.5em + (0.7em - 0.5em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), 0.7em);
+.card {
+    width: clamp(325px, 300px + 6vw, 383px);
+    margin: clamp(0.5rem, 1rem + 1vw , 1.5rem);
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1.2rem;
 
     background-color: var(--white);
     border-radius: 1.2rem;
     border: solid 0.0625rem var(--gray-950);
     box-shadow: var(--gray-950) 0.5em 0.5em 0;
 
-    padding: clamp(1rem, calc(1rem + (1.25rem - 1rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 1.25rem);
+    padding: clamp(1rem, 1rem + 1vw , 1.25rem);
 }  
 
 img {
@@ -67,7 +66,7 @@ img {
 
 h1 {
     font-weight: 800;
-    font-size: clamp(1.25rem, calc(1.25rem + (1.5rem - 1.25rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 1.5rem);
+    font-size: clamp(1.25rem, calc(1.16rem + 0.37vw) , 1.5rem);
 }
 
 h1:hover {
@@ -76,45 +75,44 @@ h1:hover {
 }
 
 .status {
-    display: inline-block;
     width: fit-content;
     padding: 0.4em 0.8em;
-    margin-block-end: clamp(-0.75em, calc(-0.75em + (-0.25em - -0.75em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), -0.25em);
+    margin-block-end: clamp(-0.75em, calc(-1em + 0.58vw), -0.25em);
 
     font-weight: 800;
     border-radius: 0.3em;
-    font-size: clamp(0.75rem, calc(0.75rem + (0.875rem - 0.75rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 0.875rem);
+    font-size: clamp(0.75rem, calc(0.66rem + 0.12vw), 0.88rem);
     background-color: var(--yellow);
 }
-.published{
+.publish-date{
     color: var(--gray-950);
     font-weight: 500;
-    font-size: clamp(0.75rem, calc(0.75rem + (0.875rem - 0.75rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 0.875rem)
+    font-size: clamp(0.75rem, calc(0.66rem + 0.12vw), 0.88rem);
 }
 
 .description {
     font-weight: 500;
     color: var(--gray-500);
-    line-height: 1.5em;
-    font-size: clamp(0.875rem, calc(0.875rem + (1rem - 0.875rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 1rem)
+    line-height: 1.7;
+    font-size: clamp(0.88rem, calc(0.78rem + 0.15vw), 1rem);
 }
 
 .user {
     display: flex;
     align-items: center;
-    font-size: clamp(0.875rem, calc(0.875rem + (1rem - 0.875rem)*((100vw - 23.4375rem)/(90rem - 23.4375rem))), 1rem);
+    font-size: clamp(0.88rem, calc(0.78rem + 0.14vw), 1rem);
 }
 
 .user-image {
-    width: max(1.5em, 2em);
-    height: max(1.5em, 2em);
-    margin-inline-end: clamp(0.75em, calc(0.75em + (1em - 0.75em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), 1em);
+    width: clamp(1.5em, 2vw, 2em);
+    height: clamp(1.5em, 2vw, 2em);
+    margin-inline-end: clamp(0.75em, calc(0.65em + 0.15vw), 1em);
 }
 
 .attribution { 
-    font-size: clamp(0.7em, calc(0.7em + (0.2vw - 0.7em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), 0.2vw); 
+    font-size: clamp(0.7em, calc(0.57em + 0.19vw), 1em); 
     text-align: center;
-    margin: clamp(1em, calc(1em + (1.2em - 1em) * ((100vw - 23.4375rem) / (90rem - 23.4375rem))), 1.2em);
+    margin: clamp(1rem, calc(0.92em + 0.12vw), 1.2em);
 }
 
 .attribution a { 
