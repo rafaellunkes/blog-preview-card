@@ -44,7 +44,7 @@ main {
 }
 
 .card {
-    width: clamp(325px, 300px + 6vw, 383px);
+    width: clamp(20.3125rem, calc(18.75rem + 6vw), 23.9375rem);
     margin: clamp(0.5rem, 1rem + 1vw , 1.5rem);
 
     display: flex;
